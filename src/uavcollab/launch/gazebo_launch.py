@@ -8,6 +8,13 @@ def generate_launch_description():
 
     pkg_share = get_package_share_directory("uavcollab")
     worlds_dir = os.path.join(pkg_share, "worlds")
+    
+    lst = pkg_share.split('/')
+    
+    del lst[-4:]
+    lst+=["src","uavcollab"]
+    pkg_share = "/".join(lst)
+    worlds_dir=pkg_share+"/worlds"
 
     old_resource_path = os.environ.get("GZ_SIM_RESOURCE_PATH", "")
 
@@ -16,11 +23,10 @@ def generate_launch_description():
         pkg_share,
         
     ]))
-
     return LaunchDescription([
         SetEnvironmentVariable(
             name="GZ_SIM_RESOURCE_PATH",
-            value="/media/$USER/2454fe4a-d2e4-460e-b4f5-df3cde6b9592/training_pool/src/uavcollab/worlds"
+            value=worlds_dir,
         ),
 
         ExecuteProcess(
