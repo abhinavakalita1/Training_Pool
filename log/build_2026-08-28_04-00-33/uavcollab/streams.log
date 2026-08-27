@@ -1,0 +1,67 @@
+[0.392s] Invoking command in '/media/divy/2454fe4a-d2e4-460e-b4f5-df3cde6b9592/training_pool/src/uavcollab': CONDA_PROMPT_MODIFIER=(base) PYTHONPATH=/media/divy/2454fe4a-d2e4-460e-b4f5-df3cde6b9592/training_pool/build/uavcollab/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/media/divy/2454fe4a-d2e4-460e-b4f5-df3cde6b9592/training_pool/install/uavcollab/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/uavcollab build --build-base /media/divy/2454fe4a-d2e4-460e-b4f5-df3cde6b9592/training_pool/build/uavcollab/build install --record /media/divy/2454fe4a-d2e4-460e-b4f5-df3cde6b9592/training_pool/build/uavcollab/install.log --single-version-externally-managed install_data
+[0.544s] running egg_info
+[0.554s] writing ../../build/uavcollab/uavcollab.egg-info/PKG-INFO
+[0.554s] writing dependency_links to ../../build/uavcollab/uavcollab.egg-info/dependency_links.txt
+[0.554s] writing entry points to ../../build/uavcollab/uavcollab.egg-info/entry_points.txt
+[0.554s] writing requirements to ../../build/uavcollab/uavcollab.egg-info/requires.txt
+[0.555s] writing top-level names to ../../build/uavcollab/uavcollab.egg-info/top_level.txt
+[0.575s] reading manifest file '../../build/uavcollab/uavcollab.egg-info/SOURCES.txt'
+[0.575s] adding license file 'LICENSE'
+[0.576s] writing manifest file '../../build/uavcollab/uavcollab.egg-info/SOURCES.txt'
+[0.576s] running build
+[0.576s] running build_py
+[0.576s] copying uavcollab/__init__.py -> /media/divy/2454fe4a-d2e4-460e-b4f5-df3cde6b9592/training_pool/build/uavcollab/build/lib/uavcollab
+[0.576s] running install
+[0.579s] running install_lib
+[0.588s] running install_data
+[0.589s] copying resource/uavcollab -> /media/divy/2454fe4a-d2e4-460e-b4f5-df3cde6b9592/training_pool/install/uavcollab/share/ament_index/resource_index/packages
+[0.589s] copying package.xml -> /media/divy/2454fe4a-d2e4-460e-b4f5-df3cde6b9592/training_pool/install/uavcollab/share/uavcollab
+[0.589s] copying launch/gazebo_launch.py -> /media/divy/2454fe4a-d2e4-460e-b4f5-df3cde6b9592/training_pool/install/uavcollab/share/uavcollab/launch
+[0.589s] copying worlds/model.config -> /media/divy/2454fe4a-d2e4-460e-b4f5-df3cde6b9592/training_pool/install/uavcollab/share/uavcollab/worlds
+[0.589s] copying worlds/model.sdf -> /media/divy/2454fe4a-d2e4-460e-b4f5-df3cde6b9592/training_pool/install/uavcollab/share/uavcollab/worlds
+[0.589s] copying worlds/meshes/nb_park.dae -> /media/divy/2454fe4a-d2e4-460e-b4f5-df3cde6b9592/training_pool/install/uavcollab/share/uavcollab/worlds/meshes
+[0.593s] copying worlds/thumbnails/5.png -> /media/divy/2454fe4a-d2e4-460e-b4f5-df3cde6b9592/training_pool/install/uavcollab/share/uavcollab/worlds/thumbnails
+[0.593s] copying worlds/thumbnails/2.png -> /media/divy/2454fe4a-d2e4-460e-b4f5-df3cde6b9592/training_pool/install/uavcollab/share/uavcollab/worlds/thumbnails
+[0.593s] copying worlds/thumbnails/3.png -> /media/divy/2454fe4a-d2e4-460e-b4f5-df3cde6b9592/training_pool/install/uavcollab/share/uavcollab/worlds/thumbnails
+[0.594s] copying worlds/thumbnails/1.png -> /media/divy/2454fe4a-d2e4-460e-b4f5-df3cde6b9592/training_pool/install/uavcollab/share/uavcollab/worlds/thumbnails
+[0.594s] copying worlds/thumbnails/4.png -> /media/divy/2454fe4a-d2e4-460e-b4f5-df3cde6b9592/training_pool/install/uavcollab/share/uavcollab/worlds/thumbnails
+[0.594s] copying worlds/materials/textures/DoorWindow_Albedo.png -> /media/divy/2454fe4a-d2e4-460e-b4f5-df3cde6b9592/training_pool/install/uavcollab/share/uavcollab/worlds/thumbnails
+[0.595s] copying worlds/materials/textures/Wall_Albedo.png -> /media/divy/2454fe4a-d2e4-460e-b4f5-df3cde6b9592/training_pool/install/uavcollab/share/uavcollab/worlds/thumbnails
+[0.596s] copying worlds/materials/textures/Wall_Roughness.png -> /media/divy/2454fe4a-d2e4-460e-b4f5-df3cde6b9592/training_pool/install/uavcollab/share/uavcollab/worlds/thumbnails
+[0.597s] copying worlds/materials/textures/Sand_Normal.png -> /media/divy/2454fe4a-d2e4-460e-b4f5-df3cde6b9592/training_pool/install/uavcollab/share/uavcollab/worlds/thumbnails
+[0.608s] copying worlds/materials/textures/Road_Albedo.png -> /media/divy/2454fe4a-d2e4-460e-b4f5-df3cde6b9592/training_pool/install/uavcollab/share/uavcollab/worlds/thumbnails
+[0.611s] copying worlds/materials/textures/Dock_Albedo.png -> /media/divy/2454fe4a-d2e4-460e-b4f5-df3cde6b9592/training_pool/install/uavcollab/share/uavcollab/worlds/thumbnails
+[0.612s] copying worlds/materials/textures/Concrete_Normal.png -> /media/divy/2454fe4a-d2e4-460e-b4f5-df3cde6b9592/training_pool/install/uavcollab/share/uavcollab/worlds/thumbnails
+[0.622s] copying worlds/materials/textures/EnvMap.dds -> /media/divy/2454fe4a-d2e4-460e-b4f5-df3cde6b9592/training_pool/install/uavcollab/share/uavcollab/worlds/thumbnails
+[0.636s] copying worlds/materials/textures/Road_Roughness.png -> /media/divy/2454fe4a-d2e4-460e-b4f5-df3cde6b9592/training_pool/install/uavcollab/share/uavcollab/worlds/thumbnails
+[0.637s] copying worlds/materials/textures/PalmTree_Albedo.png -> /media/divy/2454fe4a-d2e4-460e-b4f5-df3cde6b9592/training_pool/install/uavcollab/share/uavcollab/worlds/thumbnails
+[0.637s] copying worlds/materials/textures/flat_normal.png -> /media/divy/2454fe4a-d2e4-460e-b4f5-df3cde6b9592/training_pool/install/uavcollab/share/uavcollab/worlds/thumbnails
+[0.637s] copying worlds/materials/textures/Asphalt_Albedo.png -> /media/divy/2454fe4a-d2e4-460e-b4f5-df3cde6b9592/training_pool/install/uavcollab/share/uavcollab/worlds/thumbnails
+[0.641s] copying worlds/materials/textures/Railing_Roughness.png -> /media/divy/2454fe4a-d2e4-460e-b4f5-df3cde6b9592/training_pool/install/uavcollab/share/uavcollab/worlds/thumbnails
+[0.641s] copying worlds/materials/textures/Roof_Normal.png -> /media/divy/2454fe4a-d2e4-460e-b4f5-df3cde6b9592/training_pool/install/uavcollab/share/uavcollab/worlds/thumbnails
+[0.645s] copying worlds/materials/textures/Roof_Roughness.png -> /media/divy/2454fe4a-d2e4-460e-b4f5-df3cde6b9592/training_pool/install/uavcollab/share/uavcollab/worlds/thumbnails
+[0.646s] copying worlds/materials/textures/Grass_Normal.png -> /media/divy/2454fe4a-d2e4-460e-b4f5-df3cde6b9592/training_pool/install/uavcollab/share/uavcollab/worlds/thumbnails
+[0.659s] copying worlds/materials/textures/PalmTree_Normal.png -> /media/divy/2454fe4a-d2e4-460e-b4f5-df3cde6b9592/training_pool/install/uavcollab/share/uavcollab/worlds/thumbnails
+[0.659s] copying worlds/materials/textures/Railing_Albedo.png -> /media/divy/2454fe4a-d2e4-460e-b4f5-df3cde6b9592/training_pool/install/uavcollab/share/uavcollab/worlds/thumbnails
+[0.659s] copying worlds/materials/textures/Road_Normal.png -> /media/divy/2454fe4a-d2e4-460e-b4f5-df3cde6b9592/training_pool/install/uavcollab/share/uavcollab/worlds/thumbnails
+[0.671s] copying worlds/materials/textures/Grass_Albedo.jpg -> /media/divy/2454fe4a-d2e4-460e-b4f5-df3cde6b9592/training_pool/install/uavcollab/share/uavcollab/worlds/thumbnails
+[0.673s] copying worlds/materials/textures/Wall_Normal.png -> /media/divy/2454fe4a-d2e4-460e-b4f5-df3cde6b9592/training_pool/install/uavcollab/share/uavcollab/worlds/thumbnails
+[0.673s] copying worlds/materials/textures/Dock_Roughness.png -> /media/divy/2454fe4a-d2e4-460e-b4f5-df3cde6b9592/training_pool/install/uavcollab/share/uavcollab/worlds/thumbnails
+[0.674s] copying worlds/materials/textures/Railing_Metalness.png -> /media/divy/2454fe4a-d2e4-460e-b4f5-df3cde6b9592/training_pool/install/uavcollab/share/uavcollab/worlds/thumbnails
+[0.674s] copying worlds/materials/textures/Window_Albedo.png -> /media/divy/2454fe4a-d2e4-460e-b4f5-df3cde6b9592/training_pool/install/uavcollab/share/uavcollab/worlds/thumbnails
+[0.674s] copying worlds/materials/textures/Asphalt_Roughness.png -> /media/divy/2454fe4a-d2e4-460e-b4f5-df3cde6b9592/training_pool/install/uavcollab/share/uavcollab/worlds/thumbnails
+[0.676s] copying worlds/materials/textures/Concrete_Albedo.png -> /media/divy/2454fe4a-d2e4-460e-b4f5-df3cde6b9592/training_pool/install/uavcollab/share/uavcollab/worlds/thumbnails
+[0.677s] copying worlds/materials/textures/Roof_Albedo.png -> /media/divy/2454fe4a-d2e4-460e-b4f5-df3cde6b9592/training_pool/install/uavcollab/share/uavcollab/worlds/thumbnails
+[0.679s] copying worlds/materials/textures/Sand_Albedo.png -> /media/divy/2454fe4a-d2e4-460e-b4f5-df3cde6b9592/training_pool/install/uavcollab/share/uavcollab/worlds/thumbnails
+[0.684s] copying worlds/materials/textures/Concrete_Roughness.png -> /media/divy/2454fe4a-d2e4-460e-b4f5-df3cde6b9592/training_pool/install/uavcollab/share/uavcollab/worlds/thumbnails
+[0.685s] copying worlds/materials/textures/Dock_Normal.png -> /media/divy/2454fe4a-d2e4-460e-b4f5-df3cde6b9592/training_pool/install/uavcollab/share/uavcollab/worlds/thumbnails
+[0.695s] copying worlds/materials/textures/Tree_Albedo.png -> /media/divy/2454fe4a-d2e4-460e-b4f5-df3cde6b9592/training_pool/install/uavcollab/share/uavcollab/worlds/thumbnails
+[0.696s] copying worlds/materials/textures/Window_Roughness.png -> /media/divy/2454fe4a-d2e4-460e-b4f5-df3cde6b9592/training_pool/install/uavcollab/share/uavcollab/worlds/thumbnails
+[0.696s] copying worlds/materials/textures/Asphalt_Normal.png -> /media/divy/2454fe4a-d2e4-460e-b4f5-df3cde6b9592/training_pool/install/uavcollab/share/uavcollab/worlds/thumbnails
+[0.707s] running install_egg_info
+[0.717s] removing '/media/divy/2454fe4a-d2e4-460e-b4f5-df3cde6b9592/training_pool/install/uavcollab/lib/python3.10/site-packages/uavcollab-0.0.0-py3.10.egg-info' (and everything under it)
+[0.718s] Copying ../../build/uavcollab/uavcollab.egg-info to /media/divy/2454fe4a-d2e4-460e-b4f5-df3cde6b9592/training_pool/install/uavcollab/lib/python3.10/site-packages/uavcollab-0.0.0-py3.10.egg-info
+[0.718s] running install_scripts
+[0.738s] Installing my_script_node script to /media/divy/2454fe4a-d2e4-460e-b4f5-df3cde6b9592/training_pool/install/uavcollab/lib/uavcollab
+[0.738s] writing list of installed files to '/media/divy/2454fe4a-d2e4-460e-b4f5-df3cde6b9592/training_pool/build/uavcollab/install.log'
+[0.753s] Invoked command in '/media/divy/2454fe4a-d2e4-460e-b4f5-df3cde6b9592/training_pool/src/uavcollab' returned '0': CONDA_PROMPT_MODIFIER=(base) PYTHONPATH=/media/divy/2454fe4a-d2e4-460e-b4f5-df3cde6b9592/training_pool/build/uavcollab/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/media/divy/2454fe4a-d2e4-460e-b4f5-df3cde6b9592/training_pool/install/uavcollab/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/uavcollab build --build-base /media/divy/2454fe4a-d2e4-460e-b4f5-df3cde6b9592/training_pool/build/uavcollab/build install --record /media/divy/2454fe4a-d2e4-460e-b4f5-df3cde6b9592/training_pool/build/uavcollab/install.log --single-version-externally-managed install_data
