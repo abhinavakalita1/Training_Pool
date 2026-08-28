@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<robot name="unit_cube">
+
+  <link name="base_link">
+    <!-- Visual Representation -->
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <box size="1.0 1.0 1.0"/>
+      </geometry>
+      <material name="cube_material">
+        <color rgba="0.8 0.2 0.2 1.0"/> <!-- Red color -->
+      </material>
+    </visual>
+
+    <!-- Physical Collision Bounds -->
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <box size="1.0 1.0 1.0"/>
+      </geometry>
+    </collision>
+
+    <!-- Inertial Properties (Mass = 1kg) -->
+    <inertial>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <mass value="1.0"/>
+      <inertia ixx="0.1667" ixy="0.0" ixz="0.0" 
+               iyy="0.1667" iyz="0.0" 
+               izz="0.1667"/>
+    </inertial>
+  </link>
+
+  <!-- Gazebo Material Tag -->
+  <gazebo reference="base_link">
+    <material>Gazebo/Red</material>
+  </gazebo>
+
+</robot>

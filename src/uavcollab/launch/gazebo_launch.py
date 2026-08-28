@@ -17,9 +17,13 @@ def generate_launch_description():
     worlds_dir=pkg_share+"/worlds"
 
     old_resource_path = os.environ.get("GZ_SIM_RESOURCE_PATH", "")
+    
+    del lst[-3:]
+    my_path = "/".join(lst)
+    
 
 
-    px4_autopilot_dir = os.path.expanduser("/media/divy/5c85a034-6379-4cd7-a75b-c4ed0b105d26/PX4/PX4-Autopilot")  # adjust to your actual path
+    px4_autopilot_dir = os.path.expanduser("/home/abhinava/PX4-Autopilot")  # adjust to your actual path
     px4_gz_models = px4_autopilot_dir + "/Tools/simulation/gz/models"
     px4_gz_worlds = px4_autopilot_dir + "/Tools/simulation/gz/worlds"
 
