@@ -14,6 +14,9 @@
     </plugin>
     <plugin filename="gz-sim-imu-system" name="gz::sim::systems::Imu"></plugin>
     <plugin filename="gz-sim-air-pressure-system" name="gz::sim::systems::AirPressure"></plugin>
+    <!-- Added: required for PX4 to receive compass/heading data. Without this
+         plugin, "Found 0 compass" persists even with <magnetic_field> set below. -->
+    <plugin filename="gz-sim-magnetometer-system" name="gz::sim::systems::Magnetometer"></plugin>
     <plugin filename="gz-sim-apply-link-wrench-system" name="gz::sim::systems::ApplyLinkWrench"></plugin>
     <plugin filename="gz-sim-navsat-system" name="gz::sim::systems::NavSat"></plugin>
     <plugin filename="gz-sim-contact-system" name="gz::sim::systems::Contact"></plugin>
@@ -52,12 +55,37 @@
       <direction>-0.5 0.1 -0.9</direction>
     </light>
 
+    <!-- Fallback ground plane with collision, in case the my_park model's
+         terrain mesh lacks its own collision geometry. Adjust <pose> Z if
+         your park's ground sits at a different height than 0. Remove once
+         my_park's own collision geometry is confirmed to work. -->
+    <model name="ground_plane">
+      <static>true</static>
+      <link name="link">
+        <collision name="collision">
+          <geometry>
+            <plane>
+              <normal>0 0 1</normal>
+              <size>2000 2000</size>
+            </plane>
+          </geometry>
+          <surface>
+            <friction>
+              <ode>
+                <mu>1.0</mu>
+                <mu2>1.0</mu2>
+              </ode>
+            </friction>
+          </surface>
+        </collision>
+      </link>
+    </model>
+
     <include>
       <uri>model://my_park</uri>
-      <name>my_park</name>
+      <n>my_park</n>
       <pose>0 0 0 0 0 0</pose>
     </include>
 
   </world>
 </sdf>
-

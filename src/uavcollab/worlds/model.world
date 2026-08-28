@@ -13,6 +13,7 @@
     <plugin filename="gz-sim-air-pressure-system" name="gz::sim::systems::AirPressure"/>
     <plugin filename="gz-sim-magnetometer-system" name="gz::sim::systems::Magnetometer"/>
     <plugin filename="gz-sim-navsat-system" name="gz::sim::systems::NavSat"/>
+    <plugin filename="gz-sim-contact-system" name="gz::sim::systems::Contact"/>
 
     <!-- Physics engine settings (needed for PX4 SITL to run reliably) -->
     <physics name="default_physics" type="ode">
@@ -28,6 +29,11 @@
       <longitude_deg>-82.451841</longitude_deg>
       <elevation>0</elevation>
     </spherical_coordinates>
+
+    <!-- Magnetic field vector required by the magnetometer plugin above.
+         Without this, PX4 reports "Found 0 compass" even though the
+         magnetometer-system plugin is loaded. -->
+    <magnetic_field>6e-06 2.3e-05 -4.2e-05</magnetic_field>
 
     <!-- Lighting -->
     <light type="directional" name="sun">
@@ -52,6 +58,33 @@
 
     <gravity>0 0 -9.8066</gravity>
 
+    <!-- Fallback ground plane with collision. Keeps the drone from falling
+         through if the nb_park model's terrain mesh has visual-only
+         geometry and no collision. Adjust <pose> Z if your park's ground
+         sits at a different height than 0. Remove this once nb_park's own
+         collision geometry is confirmed to work. -->
+    <model name="ground_plane">
+      <static>true</static>
+      <link name="link">
+        <collision name="collision">
+          <geometry>
+            <plane>
+              <normal>0 0 1</normal>
+              <size>2000 2000</size>
+            </plane>
+          </geometry>
+          <surface>
+            <friction>
+              <ode>
+                <mu>1.0</mu>
+                <mu2>1.0</mu2>
+              </ode>
+            </friction>
+          </surface>
+        </collision>
+      </link>
+    </model>
+
     <!-- Map model -->
     <include>
       <uri>model://nb_park</uri>
@@ -63,7 +96,7 @@
         <pose>100 -1050 20 0 0.3 2.4</pose>
       </camera>
     </gui>
-    
+
 
   </world>
 </sdf>

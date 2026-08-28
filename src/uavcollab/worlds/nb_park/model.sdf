@@ -3,7 +3,7 @@
     <model name="nb_park">
         <static>true</static>
         <link name="base_link">
-            <pose>100.3 -1056.8 -27.2 0 0 0</pose>
+            <pose>100.3 -1056.8 -32.2 0 0 0</pose>
             <collision name="base_collision">
                 <geometry>
                     <mesh>
@@ -263,6 +263,16 @@
             </visual>
         </link>
         <link name="heightmap">
+            <collision name="heightmap_collision">
+                <geometry>
+                    <heightmap>
+                        <use_terrain_paging>false</use_terrain_paging>
+                        <uri>materials/textures/Heightmap.png</uri>
+                        <size>1724.5 3449 7</size>
+                        <pos>100.3 -1056.8 -29.748</pos>
+                    </heightmap>
+                </geometry>
+            </collision>
             <visual name="heightmap_visual">
                 <geometry>
                     <heightmap>
