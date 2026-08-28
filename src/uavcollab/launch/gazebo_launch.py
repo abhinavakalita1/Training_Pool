@@ -40,7 +40,7 @@ def generate_launch_description():
         ExecuteProcess(
             cmd=[
                 "gz", "sim", "-r",
-                os.path.join(worlds_dir, "model.sdf")
+                os.path.join(worlds_dir, "model.world")
             ],
             output="screen"
         )

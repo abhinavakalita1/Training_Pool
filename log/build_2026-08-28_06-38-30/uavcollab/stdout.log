@@ -1,0 +1,25 @@
+running egg_info
+writing ../../build/uavcollab/uavcollab.egg-info/PKG-INFO
+writing dependency_links to ../../build/uavcollab/uavcollab.egg-info/dependency_links.txt
+writing entry points to ../../build/uavcollab/uavcollab.egg-info/entry_points.txt
+writing requirements to ../../build/uavcollab/uavcollab.egg-info/requires.txt
+writing top-level names to ../../build/uavcollab/uavcollab.egg-info/top_level.txt
+reading manifest file '../../build/uavcollab/uavcollab.egg-info/SOURCES.txt'
+adding license file 'LICENSE'
+writing manifest file '../../build/uavcollab/uavcollab.egg-info/SOURCES.txt'
+running build
+running build_py
+copying uavcollab/__init__.py -> /media/divy/2454fe4a-d2e4-460e-b4f5-df3cde6b9592/training_pool/build/uavcollab/build/lib/uavcollab
+running install
+running install_lib
+running install_data
+copying resource/uavcollab -> /media/divy/2454fe4a-d2e4-460e-b4f5-df3cde6b9592/training_pool/install/uavcollab/share/ament_index/resource_index/packages
+copying package.xml -> /media/divy/2454fe4a-d2e4-460e-b4f5-df3cde6b9592/training_pool/install/uavcollab/share/uavcollab
+copying launch/gazebo_launch.py -> /media/divy/2454fe4a-d2e4-460e-b4f5-df3cde6b9592/training_pool/install/uavcollab/share/uavcollab/launch
+copying worlds/model.world -> /media/divy/2454fe4a-d2e4-460e-b4f5-df3cde6b9592/training_pool/install/uavcollab/share/uavcollab/worlds
+running install_egg_info
+removing '/media/divy/2454fe4a-d2e4-460e-b4f5-df3cde6b9592/training_pool/install/uavcollab/lib/python3.10/site-packages/uavcollab-0.0.0-py3.10.egg-info' (and everything under it)
+Copying ../../build/uavcollab/uavcollab.egg-info to /media/divy/2454fe4a-d2e4-460e-b4f5-df3cde6b9592/training_pool/install/uavcollab/lib/python3.10/site-packages/uavcollab-0.0.0-py3.10.egg-info
+running install_scripts
+Installing my_script_node script to /media/divy/2454fe4a-d2e4-460e-b4f5-df3cde6b9592/training_pool/install/uavcollab/lib/uavcollab
+writing list of installed files to '/media/divy/2454fe4a-d2e4-460e-b4f5-df3cde6b9592/training_pool/build/uavcollab/install.log'

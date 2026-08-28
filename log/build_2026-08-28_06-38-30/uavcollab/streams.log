@@ -1,0 +1,27 @@
+[0.453s] Invoking command in '/media/divy/2454fe4a-d2e4-460e-b4f5-df3cde6b9592/training_pool/src/uavcollab': CONDA_PROMPT_MODIFIER=(base) PYTHONPATH=/media/divy/2454fe4a-d2e4-460e-b4f5-df3cde6b9592/training_pool/build/uavcollab/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/media/divy/2454fe4a-d2e4-460e-b4f5-df3cde6b9592/training_pool/install/uavcollab/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/uavcollab build --build-base /media/divy/2454fe4a-d2e4-460e-b4f5-df3cde6b9592/training_pool/build/uavcollab/build install --record /media/divy/2454fe4a-d2e4-460e-b4f5-df3cde6b9592/training_pool/build/uavcollab/install.log --single-version-externally-managed install_data
+[0.610s] running egg_info
+[0.620s] writing ../../build/uavcollab/uavcollab.egg-info/PKG-INFO
+[0.621s] writing dependency_links to ../../build/uavcollab/uavcollab.egg-info/dependency_links.txt
+[0.622s] writing entry points to ../../build/uavcollab/uavcollab.egg-info/entry_points.txt
+[0.622s] writing requirements to ../../build/uavcollab/uavcollab.egg-info/requires.txt
+[0.622s] writing top-level names to ../../build/uavcollab/uavcollab.egg-info/top_level.txt
+[0.645s] reading manifest file '../../build/uavcollab/uavcollab.egg-info/SOURCES.txt'
+[0.645s] adding license file 'LICENSE'
+[0.646s] writing manifest file '../../build/uavcollab/uavcollab.egg-info/SOURCES.txt'
+[0.646s] running build
+[0.646s] running build_py
+[0.646s] copying uavcollab/__init__.py -> /media/divy/2454fe4a-d2e4-460e-b4f5-df3cde6b9592/training_pool/build/uavcollab/build/lib/uavcollab
+[0.647s] running install
+[0.649s] running install_lib
+[0.659s] running install_data
+[0.660s] copying resource/uavcollab -> /media/divy/2454fe4a-d2e4-460e-b4f5-df3cde6b9592/training_pool/install/uavcollab/share/ament_index/resource_index/packages
+[0.660s] copying package.xml -> /media/divy/2454fe4a-d2e4-460e-b4f5-df3cde6b9592/training_pool/install/uavcollab/share/uavcollab
+[0.660s] copying launch/gazebo_launch.py -> /media/divy/2454fe4a-d2e4-460e-b4f5-df3cde6b9592/training_pool/install/uavcollab/share/uavcollab/launch
+[0.661s] copying worlds/model.world -> /media/divy/2454fe4a-d2e4-460e-b4f5-df3cde6b9592/training_pool/install/uavcollab/share/uavcollab/worlds
+[0.661s] running install_egg_info
+[0.672s] removing '/media/divy/2454fe4a-d2e4-460e-b4f5-df3cde6b9592/training_pool/install/uavcollab/lib/python3.10/site-packages/uavcollab-0.0.0-py3.10.egg-info' (and everything under it)
+[0.672s] Copying ../../build/uavcollab/uavcollab.egg-info to /media/divy/2454fe4a-d2e4-460e-b4f5-df3cde6b9592/training_pool/install/uavcollab/lib/python3.10/site-packages/uavcollab-0.0.0-py3.10.egg-info
+[0.673s] running install_scripts
+[0.694s] Installing my_script_node script to /media/divy/2454fe4a-d2e4-460e-b4f5-df3cde6b9592/training_pool/install/uavcollab/lib/uavcollab
+[0.694s] writing list of installed files to '/media/divy/2454fe4a-d2e4-460e-b4f5-df3cde6b9592/training_pool/build/uavcollab/install.log'
+[0.708s] Invoked command in '/media/divy/2454fe4a-d2e4-460e-b4f5-df3cde6b9592/training_pool/src/uavcollab' returned '0': CONDA_PROMPT_MODIFIER=(base) PYTHONPATH=/media/divy/2454fe4a-d2e4-460e-b4f5-df3cde6b9592/training_pool/build/uavcollab/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/media/divy/2454fe4a-d2e4-460e-b4f5-df3cde6b9592/training_pool/install/uavcollab/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/uavcollab build --build-base /media/divy/2454fe4a-d2e4-460e-b4f5-df3cde6b9592/training_pool/build/uavcollab/build install --record /media/divy/2454fe4a-d2e4-460e-b4f5-df3cde6b9592/training_pool/build/uavcollab/install.log --single-version-externally-managed install_data
