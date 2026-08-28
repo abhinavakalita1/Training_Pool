@@ -16,13 +16,13 @@ setup(
         
         # Include worlds root files (model.config and model.sdf)
         (os.path.join('share', package_name, 'worlds'), glob(os.path.join('worlds', '*.*'))),
-        (os.path.join('share', package_name, 'worlds'), glob(os.path.join('urdf', '*.*'))),
-        (os.path.join('share', package_name, 'worlds'), glob(os.path.join('config', '*.*'))),
+        (os.path.join('share', package_name, 'urdf'), glob(os.path.join('urdf', '*.*'))),
+        (os.path.join('share', package_name, 'config'), glob(os.path.join('config', '*.*'))),
         
         # Explicitly map all your resource folders
-        (os.path.join('share', package_name, 'worlds', 'meshes'), glob(os.path.join('worlds', 'meshes', '*'))),
-        (os.path.join('share', package_name, 'worlds', 'thumbnails'), glob(os.path.join('worlds', 'thumbnails', '*'))),
-        (os.path.join('share', package_name, 'worlds', 'thumbnails'), glob(os.path.join('worlds', 'materials', 'textures', '*'))),
+#        (os.path.join('share', package_name, 'worlds', 'meshes'), glob(os.path.join('worlds', 'meshes', '*'))),
+#        (os.path.join('share', package_name, 'worlds', 'thumbnails'), glob(os.path.join('worlds', 'thumbnails', '*'))),
+#        (os.path.join('share', package_name, 'worlds', 'thumbnails'), glob(os.path.join('worlds', 'materials', 'textures', '*'))),
     ],
 
     install_requires=['setuptools'],
