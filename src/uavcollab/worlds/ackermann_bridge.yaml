@@ -1,0 +1,30 @@
+# ros_gz_bridge config for the ackermann_rover model defined in model.world
+#
+# Usage:
+#   ros2 run ros_gz_bridge parameter_bridge --ros-args -p config_file:=ackermann_bridge.yaml
+#
+# This bridges:
+#   ROS 2 /cmd_vel        (geometry_msgs/msg/Twist)  -> Gazebo /model/ackermann_rover/cmd_vel
+#   Gazebo /model/ackermann_rover/odometry            -> ROS 2 /odom (nav_msgs/msg/Odometry)
+#   Gazebo /model/ackermann_rover/pose (tf)            -> ROS 2 /tf (tf2_msgs/msg/TFMessage)
+#
+# Adjust the model name in the gz_topic_name fields below if you rename
+# "ackermann_rover" in model.world.
+
+- ros_topic_name: "cmd_vel"
+  gz_topic_name: "/model/ackermann_rover/cmd_vel"
+  ros_type_name: "geometry_msgs/msg/Twist"
+  gz_type_name: "gz.msgs.Twist"
+  direction: ROS_TO_GZ
+
+- ros_topic_name: "odom"
+  gz_topic_name: "/model/ackermann_rover/odometry"
+  ros_type_name: "nav_msgs/msg/Odometry"
+  gz_type_name: "gz.msgs.Odometry"
+  direction: GZ_TO_ROS
+
+- ros_topic_name: "tf"
+  gz_topic_name: "/model/ackermann_rover/pose"
+  ros_type_name: "tf2_msgs/msg/TFMessage"
+  gz_type_name: "gz.msgs.Pose_V"
+  direction: GZ_TO_ROS

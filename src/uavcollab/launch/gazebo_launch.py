@@ -14,7 +14,7 @@ def generate_launch_description():
     pkg_share = "/".join(lst)
     worlds_dir = pkg_share + "/worlds"
 
-    px4_autopilot_dir = os.path.expanduser("/home/abhinava/PX4-Autopilot")
+    px4_autopilot_dir = os.path.expanduser("/media/divy/2454fe4a-d2e4-460e-b4f5-df3cde6b9592/PX4/PX4-Autopilot")
     px4_gz_models = px4_autopilot_dir + "/Tools/simulation/gz/models"
     px4_gz_worlds = px4_autopilot_dir + "/Tools/simulation/gz/worlds"
 
