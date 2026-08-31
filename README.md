@@ -3,7 +3,9 @@
 **Clone this repo in your workspace and build the package**
 
 ```cd ros2_ws ```
+
 ```git clone https://github.com/abhinavakalita1/Training_Pool.git ```
+
 ```colcon build ```
 
 
