@@ -24,7 +24,7 @@ From the repo root:
 cd /path/to/training_pool
 source /opt/ros/humble/setup.bash
 rosdep install --from-paths src --ignore-src -y
-colcon build --symlink-install
+colcon build --packages-select ackermann_gz_bringup drdo_gz_worlds uavcollab
 source install/setup.bash
 ```
 
@@ -34,12 +34,21 @@ If you plan to run PX4 SITL with Gazebo, add the following to your shell startup
 ```bash
 export GZ_SIM_RESOURCE_PATH=$HOME/PX4-Autopilot/Tools/simulation/gz/models:$HOME/PX4-Autopilot/Tools/simulation/gz/worlds:$HOME/training_pool/src/uavcollab/worlds
 ```
+Note Change the above path if you have installed PX4 or/and this repo elsewhere(other than home)
 
 Then reload the shell:
 
 ```bash
 source ~/.bashrc
 ```
+
+For the UAV in this project, the active PX4 launch pattern is:
+
+```bash
+PX4_GZ_STANDALONE=1 PX4_SIM_MODEL=gz_x500 PX4_GZ_WORLD=drdo_world2 PX4_GZ_MODEL_POSE="-10.226,311.831,22.863,0.011338,0.135709,-2.161422" ./build/px4_sitl_default/bin/px4
+```
+
+This is the command to use when spawning the PX4 UAV directly into the DRDO world at the required offset.
 
 ---
 
@@ -175,17 +184,6 @@ Arguments:
 - `ugv_roll`, `ugv_pitch`, `ugv_yaw` — UGV orientation in radians
   - default: `0`
 
-Example with both vehicles:
-
-```bash
-ros2 launch drdo_gz_worlds world.launch.py world:=drdo_world1 \
-  uav_sdf:=/path/to/iris.sdf \
-  uav_x:=-10.226 uav_y:=311.831 uav_z:=22.863 \
-  uav_roll:=0.011338 uav_pitch:=0.135709 uav_yaw:=-2.161422 \
-  ugv_sdf:=/path/to/prius.sdf \
-  ugv_x:=-12.220319 ugv_y:=308.976703 ugv_z:=22.295580 \
-  ugv_roll:=0.011338 ugv_pitch:=0.135709 ugv_yaw:=-2.161422
-```
 
 ---
 
@@ -211,15 +209,15 @@ Use the terrain offsets below when loading the drone/UGV into the DRDO world.
 
 ---
 
-## 4. PX4 example (optional)
+## 4. PX4 UAV launch
 
-If you are using PX4 SITL with Gazebo:
+Use this exact command for the UAV in the DRDO terrain world:
 
 ```bash
-PX4_GZ_STANDALONE=1 PX4_SIM_MODEL=gz_x500 PX4_GZ_WORLD=my_park_world PX4_GZ_MODEL_POSE="-45,0,5,0,0,0" ./build/px4_sitl_default/bin/px4
+PX4_GZ_STANDALONE=1 PX4_SIM_MODEL=gz_x500 PX4_GZ_WORLD=drdo_world2 PX4_GZ_MODEL_POSE="-10.226,311.831,22.863,0.011338,0.135709,-2.161422" ./build/px4_sitl_default/bin/px4
 ```
 
-Replace the world name and starting pose as needed.
+This already includes the DRDO world offset required for the terrain alignment.
 
 ---
 
@@ -234,3 +232,7 @@ Replace the world name and starting pose as needed.
 4. Use `/cmd_vel`, `/odom`, and `/tf` for control and monitoring.
 
 This is the expected pattern for DRDO terrain testing and for custom Ackermann/UAV experimentation in this workspace.
+
+
+For PX4/UAV it is recommened to use mavros/mavlink(QGC) to give commands
+You can refer to this [GitHub Repo]([url](https://github.com/SDivy1811/Aruco_Drone)) for setup
