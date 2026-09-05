@@ -45,7 +45,7 @@ source ~/.bashrc
 For the UAV in this project, the active PX4 launch pattern is:
 
 ```bash
-PX4_GZ_STANDALONE=1 PX4_SIM_MODEL=gz_x500 PX4_GZ_WORLD=drdo_world2 PX4_GZ_MODEL_POSE="-10.226,311.831,22.863,0.011338,0.135709,-2.161422" ./build/px4_sitl_default/bin/px4
+PX4_GZ_STANDALONE=1 PX4_SIM_MODEL=gz_x500 PX4_GZ_WORLD=drdo_world2 PX4_GZ_MODEL_POSE="103.776917,-101.472992,17.318562,-0.054656,0.032451,2.460081" ./build/px4_sitl_default/bin/px4
 ```
 
 This is the command to use when spawning the PX4 UAV directly into the DRDO world at the required offset.
@@ -214,7 +214,7 @@ Use the terrain offsets below when loading the drone/UGV into the DRDO world.
 Use this exact command for the UAV in the DRDO terrain world:
 
 ```bash
-PX4_GZ_STANDALONE=1 PX4_SIM_MODEL=gz_x500 PX4_GZ_WORLD=drdo_world2 PX4_GZ_MODEL_POSE="-10.226,311.831,22.863,0.011338,0.135709,-2.161422" ./build/px4_sitl_default/bin/px4
+PX4_GZ_STANDALONE=1 PX4_SIM_MODEL=gz_x500 PX4_GZ_WORLD=drdo_world2 PX4_GZ_MODEL_POSE="103.776917,-101.472992,17.318562,-0.054656,0.032451,2.460081" ./build/px4_sitl_default/bin/px4
 ```
 
 This already includes the DRDO world offset required for the terrain alignment.
