@@ -71,13 +71,13 @@ def launch_setup(context, *args, **kwargs):
         # Sim clock -> ROS clock
         '/clock@rosgraph_msgs/msg/Clock[gz.msgs.Clock',
         # ROS geometry_msgs/Twist -> gz cmd_vel consumed by AckermannSteering
-        f'/model/{robot_name}/cmd_vel@geometry_msgs/msg/Twist]gz.msgs.Twist',
+        '/cmd_vel@geometry_msgs/msg/Twist]gz.msgs.Twist',
         # gz odometry -> ROS nav_msgs/Odometry
-        f'/model/{robot_name}/odometry@nav_msgs/msg/Odometry[gz.msgs.Odometry',
+        '/odometry@nav_msgs/msg/Odometry[gz.msgs.Odometry',
         # gz tf -> ROS tf2
         '/tf@tf2_msgs/msg/TFMessage[gz.msgs.Pose_V',
         # gz joint states -> ROS sensor_msgs/JointState
-        f'/model/{robot_name}/joint_states@sensor_msgs/msg/JointState[gz.msgs.Model',
+        '/joint_states@sensor_msgs/msg/JointState[gz.msgs.Model',
     ]
 
     bridge_node = Node(
@@ -87,9 +87,7 @@ def launch_setup(context, *args, **kwargs):
         output='screen',
         arguments=bridge_args,
         remappings=[
-            (f'/model/{robot_name}/cmd_vel', '/cmd_vel'),
-            (f'/model/{robot_name}/odometry', '/odom'),
-            (f'/model/{robot_name}/joint_states', '/joint_states'),
+            ('/odometry', '/odom'),
         ],
     )
 
