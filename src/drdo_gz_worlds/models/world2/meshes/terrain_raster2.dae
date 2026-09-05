@@ -117,10 +117,7 @@
         <vertices id="_00cm_terrain_008-mesh-vertices">
           <input semantic="POSITION" source="#_00cm_terrain_008-mesh-positions"/>
         </vertices>
-        <lines count="2">
-          <input semantic="VERTEX" source="#_00cm_terrain_008-mesh-vertices" offset="0"/>
-          <p>632 6849 6507 4828</p>
-        </lines>
+        
         <triangles material="Material_world_2-material" count="13357">
           <input semantic="VERTEX" source="#_00cm_terrain_008-mesh-vertices" offset="0"/>
           <input semantic="NORMAL" source="#_00cm_terrain_008-mesh-normals" offset="1"/>

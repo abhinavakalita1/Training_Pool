@@ -27,7 +27,6 @@
 
     <include>
       <uri>model://world3</uri>
-      <scale>0.000001 0.000001 0.000001</scale>
     </include>
 
     <gravity>0 0 -9.8</gravity>
