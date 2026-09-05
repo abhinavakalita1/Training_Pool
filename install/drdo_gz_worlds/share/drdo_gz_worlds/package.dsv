@@ -1,0 +1,8 @@
+source;share/drdo_gz_worlds/hook/cmake_prefix_path.ps1
+source;share/drdo_gz_worlds/hook/cmake_prefix_path.dsv
+source;share/drdo_gz_worlds/hook/cmake_prefix_path.sh
+source;share/drdo_gz_worlds/local_setup.bash
+source;share/drdo_gz_worlds/local_setup.dsv
+source;share/drdo_gz_worlds/local_setup.ps1
+source;share/drdo_gz_worlds/local_setup.sh
+source;share/drdo_gz_worlds/local_setup.zsh
