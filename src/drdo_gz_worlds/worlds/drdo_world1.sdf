@@ -35,7 +35,6 @@
       <uri>model://world1</uri>
       <!-- original repo applied an extra 1e-6 scale on top of the 50x scale
            already baked into world1/model.sdf. Kept identical to source. -->
-      <scale>0.000001 0.000001 0.000001</scale>
     </include>
 
     <gravity>0 0 -9.8</gravity>
