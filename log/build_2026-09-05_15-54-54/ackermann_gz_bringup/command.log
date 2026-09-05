@@ -1,6 +1,0 @@
-Invoking command in '/home/jashan/training_pool/build/ackermann_gz_bringup': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/jashan/training_pool/src/ackermann_gz_bringup -DCMAKE_INSTALL_PREFIX=/home/jashan/training_pool/install/ackermann_gz_bringup
-Invoked command in '/home/jashan/training_pool/build/ackermann_gz_bringup' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/jashan/training_pool/src/ackermann_gz_bringup -DCMAKE_INSTALL_PREFIX=/home/jashan/training_pool/install/ackermann_gz_bringup
-Invoking command in '/home/jashan/training_pool/build/ackermann_gz_bringup': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/jashan/training_pool/build/ackermann_gz_bringup -- -j20 -l20
-Invoked command in '/home/jashan/training_pool/build/ackermann_gz_bringup' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/jashan/training_pool/build/ackermann_gz_bringup -- -j20 -l20
-Invoking command in '/home/jashan/training_pool/build/ackermann_gz_bringup': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/jashan/training_pool/build/ackermann_gz_bringup
-Invoked command in '/home/jashan/training_pool/build/ackermann_gz_bringup' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/jashan/training_pool/build/ackermann_gz_bringup

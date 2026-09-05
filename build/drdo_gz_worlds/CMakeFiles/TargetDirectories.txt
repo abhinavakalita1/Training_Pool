@@ -1,9 +1,0 @@
-/home/jashan/training_pool/build/drdo_gz_worlds/CMakeFiles/uninstall.dir
-/home/jashan/training_pool/build/drdo_gz_worlds/CMakeFiles/drdo_gz_worlds_uninstall.dir
-/home/jashan/training_pool/build/drdo_gz_worlds/CMakeFiles/test.dir
-/home/jashan/training_pool/build/drdo_gz_worlds/CMakeFiles/edit_cache.dir
-/home/jashan/training_pool/build/drdo_gz_worlds/CMakeFiles/rebuild_cache.dir
-/home/jashan/training_pool/build/drdo_gz_worlds/CMakeFiles/list_install_components.dir
-/home/jashan/training_pool/build/drdo_gz_worlds/CMakeFiles/install.dir
-/home/jashan/training_pool/build/drdo_gz_worlds/CMakeFiles/install/local.dir
-/home/jashan/training_pool/build/drdo_gz_worlds/CMakeFiles/install/strip.dir
