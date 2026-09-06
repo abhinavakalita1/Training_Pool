@@ -12,13 +12,6 @@
             <uri>model://world1_mesh/meshes/terrain_raster.dae</uri>
           </mesh>
         </geometry>
-        <!-- add this material tag for white overlay -->
-        <material>
-          <ambient>0.1 0.1 0.1 1</ambient>
-          <diffuse>0.1 0.1 0.2 1</diffuse>
-          <specular>0 0 0 0</specular>
-          <emissive>1 1 1 1</emissive>
-        </material>
       </visual>
       <self_collide>0</self_collide>
       <enable_wind>0</enable_wind>
